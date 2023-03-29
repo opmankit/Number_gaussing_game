@@ -1,0 +1,14 @@
+import random
+print('#####NUMBER GUESSING GAME#####')
+num = random.randint(1,100)
+turn=0
+while turn<3:
+    
+    guess = int(input('enter the guess number :'))
+    if guess == num:
+        print('you win')
+    else:
+        print('you lose')
+    turn+=1
+
+print('The Number is ',num)
